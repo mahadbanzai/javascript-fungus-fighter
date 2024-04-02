@@ -14,18 +14,36 @@ It is you versus the Freaky Fungus, an evil mycological menace from ***Duluth***
 
 When you click an attack button:
 
+(There is an attack button)
+
 -  update _state_ variable(s) to make the Freaky Fungus lose hit points (HP), and to reduce your attack points (AP). 
+
+( Need a function called _state_ variable(s) and ID it to HP, and also be able to take away  the same value from our attackPower and label it AP  )
+
 - See [Attacks](#attacks) below, for the AP and HP values of each attack
+
+(There are multiple attacks with different AP's and would take away different HP's from Freaky Fungus)
+
 - State may be held in one our more variables of your choosing
+
+(Use the state thing that was refered in class )
+
 - HP and AP values may not be negative (set to zero, if they would otherwise be negative)
 
+(Set HP and AP to zero to avoid any negative amounts )
 
 **Render state changes to the DOM**
 
 - Update the text above the attack buttons (eg, "100 AP")
+(Make a counter that updates the amount of AP left)
+
 - Update the text above the enemy fungus (eg, "100 HP")
+(Make a counter that updates the amount of HP left)
+
 - If the Freaky Fungus runs out of HP, the monster is dead and you win! Replace the `walk` class with a `dead` class on the freaky-fungus element, to make them fall over and die.
+(When the HP reaches zero, freaky-fungus class changes from `walk`to `dead` )
 - If you run out of AP, the monster wins and humanity is doomed 😢 Replace the `walk` class with a `jump` class on the freaky-fungus element, to make them jump for the glory of the fungal race.
+
   - You may no longer attack, if AP is `0`. Give all of the attack buttons a [`disabled`](https://www.w3schools.com/tags/att_button_disabled.asp) attribute, so they may no longer be used. 
 
 ## Stretch Goals
